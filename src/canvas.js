@@ -137,6 +137,7 @@ export default class Canvas {
       d: 1000,
       e: 'io4',
       update: t => {
+        // t.progE === valeur entre 0 et 1, progression dans la TL
 
         // mesh qui est visible au debut et qui se cache
         this.gallery[0].scale.y = bounds.h * (1 - t.progE)
